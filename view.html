@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+ <py-script>
+import codecs
+print("Made by A&C Development: YbicG#1258 on Discord")
+x = input("Input: ")
+#encode
+def obfuscate(input):
+  byte = bytes(input, "utf-8")
+  hexEn = byte.hex()
+  return hexEn
+#test
+#decode
+def bajesk(input):
+  binary_string = codecs.decode(input, "hex")
+  res = str(binary_string, 'utf-8')
+  return res
+      
+exec(bajesk(obfuscate(x)))
+print("\n\n\n\nOutput: "+obfuscate(x))
+</py-script>
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>

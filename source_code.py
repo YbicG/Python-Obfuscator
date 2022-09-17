@@ -18,5 +18,5 @@ file = open(m.__file__+".txt", "a+")
 file.write(obfuscate(x))
 file.close()
       
-eval(bajesk(obfuscate(x)))
+exec(bajesk(obfuscate(x)))
 print("\nResult: "+obfuscate(x))
